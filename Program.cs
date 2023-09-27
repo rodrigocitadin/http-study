@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using HttpStudy.Models;
 
 using (HttpClient client = new HttpClient())
 {

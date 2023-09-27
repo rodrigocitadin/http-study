@@ -1,3 +1,4 @@
+namespace HttpStudy.Models;
 
 using System.Text.Json.Serialization;
 
