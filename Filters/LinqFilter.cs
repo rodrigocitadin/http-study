@@ -7,7 +7,7 @@ internal class LinqFilter
     public static void FilterAllMusicGenres(List<Music> musics)
     {
         var allMusicGenres = musics
-            .Select(genres => genres.Genre)
+            .Select(genre => genre.Genre)
             .Distinct()
             .ToList();
     }
