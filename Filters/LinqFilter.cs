@@ -11,4 +11,13 @@ internal class LinqFilter
             .Distinct()
             .ToList();
     }
+
+    public static void FilterAllArtistGenre(List<Music> musics, string genre)
+    {
+        var artists = musics
+            .Where(music => music.Genre!.Contains(genre))
+            .Select(music => music.Artist)
+            .Distinct()
+            .ToList();
+    }
 }
